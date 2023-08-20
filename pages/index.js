@@ -216,10 +216,7 @@ function Page({
                   }}
                 >
                   <Text
-                    onClick={() => {
-                      setHover(false)
-                      !reveal ? setReveal(true) : setReveal(false)
-                    }}
+                    
                     sx={{
                       // lineHeight: 0.875,
                       px: 2,
