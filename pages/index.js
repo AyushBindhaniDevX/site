@@ -129,17 +129,9 @@ function Page({
     <>
       <Meta
         as={Head}
-        title="A Home for High School Hackers"
-        description="Hack Club is a global nonprofit network of high school makers & student-led coding clubs where young people build the agency, the network, & the technical talent to think big & do big things in the world."
-        image="https://cloud-lgl7kg862-hack-club-bot.vercel.app/0start__1_.png"
+        title="Kalinga International"
       />
-      <Head>
-        <meta
-          property="og:logo"
-          content="https://assets.hackclub.com/icon-rounded.png"
-          size="512x512"
-        />
-      </Head>
+
       <ForceTheme theme="light" />
       <Nav />
       <Box
@@ -158,9 +150,7 @@ function Page({
             setHover(false)
           }}
         />
-        <Konami action={easterEgg}>
-          {"Hey, I'm an Easter Egg! Look at me!"}
-        </Konami>
+
 
         <Box
           as="header"
@@ -179,13 +169,7 @@ function Page({
             priority
             gradient="linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.45))"
           />
-          <Announcement
-            copy="Hop OnBoard and create your first PCB"
-            caption="Join 1,000 others to create your first circuit board."
-            href="https://hackclub.com/onboard/"
-            iconLeft="idea"
-            color="primary"
-          />
+
           <Box
             sx={{
               width: '90vw',
@@ -270,27 +254,7 @@ function Page({
               mt: [4, 3, 1]
             }}
           >
-            <Badge
-              as="a"
-              href="https://outernet.hackclub.com/"
-              target="_blank"
-              rel="noopener"
-              variant="pill"
-              sx={{
-                zIndex: '1',
-                bg: 'black',
-                color: 'white',
-                opacity: 1,
-                textDecoration: 'none',
-                fontWeight: 'normal',
-                ':hover': { opacity: 1 },
-                transition: '0.3s ease'
-                // mixBlendMode: 'multiply'
-              }}
-              title="📸 Photo by Matt Gleich, Hack Clubber in NH!"
-            >
-              Hackers at Outernet in VT
-            </Badge>
+         
           </Box>
         </Box>
         <Box as="section" sx={{ py: [4, 5, '82px'], color: 'black' }}>
@@ -354,89 +318,7 @@ function Page({
                   setCount(count + 1)
                 }}
               >
-                <Box
-                  sx={{ position: 'absolute', width: '100%', height: '100%' }}
-                >
-                  <Box
-                    sx={{
-                      position: 'relative',
-                      height: ['300px', '300px', '100%'],
-                      figure: {
-                        position: 'absolute',
-                        transform:
-                          count % 2 === 0 ? 'rotate(3deg)' : 'rotate(-3deg)',
-                        height: '85%',
-                        width: ['80%', '80%', '70%', '100%'],
-                        marginLeft: ['10%', '10%', '15%', '0']
-                      },
-                      zIndex: 3,
-                      '&:hover': {
-                        cursor: 'pointer'
-                      }
-                    }}
-                  >
-                    <Photo
-                      src={
-                        count === images.length - 2
-                          ? images[0].src
-                          : images.length - 1
-                          ? images[1].src
-                          : images[count + 2].src
-                      }
-                      alt={
-                        count === images.length - 2
-                          ? images[0].alt
-                          : images.length - 1
-                          ? images[1].alt
-                          : images[count + 2].alt
-                      }
-                      width={3000}
-                      height={2550}
-                      showAlt
-                    />
-                  </Box>
-                </Box>
-                <Box
-                  sx={{ position: 'absolute', width: '100%', height: '100%' }}
-                >
-                  <Box
-                    sx={{
-                      position: 'relative',
-                      height: ['300px', '300px', '100%'],
-                      figure: {
-                        position: 'absolute',
-                        transform:
-                          count % 2 === 0 ? 'rotate(-3deg)' : 'rotate(3deg)',
-                        height: '85%',
-                        width: ['80%', '80%', '70%', '100%'],
-                        marginLeft: ['10%', '10%', '15%', '0']
-                      },
-                      zIndex: 3,
-                      '&:hover': {
-                        cursor: 'pointer'
-                      }
-                    }}
-                  >
-                    <Photo
-                      src={
-                        count === images.length - 1
-                          ? images[0].src
-                          : images[count + 1].src
-                      }
-                      alt={
-                        count === images.length - 1
-                          ? images[0].alt
-                          : images[count + 1].alt
-                      }
-                      width={3000}
-                      height={2550}
-                      showAlt
-                    />
-                  </Box>
-                </Box>
-                <Box
-                  sx={{ position: 'absolute', width: '100%', height: '100%' }}
-                >
+                
                   <Box
                     sx={{
                       position: 'relative',
@@ -503,14 +385,9 @@ function Page({
                   </Text>
                   <Text as="p" variant="subtitle">
                     <strong sx={{ mb: 1 }}>
-                      Connect with other teenage coders
+                      Connect with Other Teenage Debaters
                     </strong>
-                    Have a coding question? Looking for project feedback? You’ll
-                    find hundreds of fabulous people to talk to in our global{' '}
-                    <Link href="/slack" target="_blank" rel="noopener">
-                      Slack{' '}
-                    </Link>
-                    (like Discord), active at all hours.
+                    Need help with your debating skills or looking for feedback on your arguments? Our global Slack community, similar to Discord, is active 24/7, filled with hundreds of talented individuals who are eager to connect and engage in robust debates.
                   </Text>
                 </Grid>
                 <Grid
@@ -537,14 +414,7 @@ function Page({
                     }}
                   >
                     <strong sx={{ mb: 1 }}>
-                      Build open source learning tools
-                    </strong>
-                    We build large open source projects together (
-                    <Link href="https://github.com/hackclub" target="_blank">
-                      3k+&nbsp;PRs a year
-                    </Link>
-                    ) like this website, a game engine, daily streak system, and
-                    more!
+Promote Open Source Debate Resources                   </strong>We take pride in creating and sharing open source debate resources. Join us in contributing to projects that enhance the world of debating, from argument templates to research databases.
                   </Text>
                 </Grid>
                 <Grid
@@ -564,17 +434,7 @@ function Page({
                     3
                   </Text>
                   <Text as="p" variant="subtitle">
-                    <strong sx={{ mb: 1 }}>Gather IRL with other makers</strong>
-                    Meet other Hack&nbsp;Clubbers in your community to build
-                    together at one of the 400+{' '}
-                    <Link href="/clubs" target="_blank" rel="noopener">
-                      Hack&nbsp;Clubs
-                    </Link>{' '}
-                    and{' '}
-                    <Link href="/hackathons" target="_blank" rel="noopener">
-                      high school hackathons
-                    </Link>
-                    .
+                    <strong sx={{ mb: 1 }}>Gather In Real Life (IRL) with Other Debaters</strong>While our online community is vibrant, we also value in-person connections. KIDC has over 400+ local chapters called "Debate Clubs" and hosts debate competitions and public speaking events worldwide. These events are where you can meet fellow debaters in your community and engage in spirited debates on various topics.
                   </Text>
                 </Grid>
               </Grid>
