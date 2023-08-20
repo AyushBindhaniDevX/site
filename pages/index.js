@@ -174,8 +174,8 @@ function Page({
           }}
         >
           <BGImg
-            src={OuternetImgFile}
-            alt="Hack Clubbers gather in the great outdoors of Cabot, VT, for an experience unlike any other: Outernet. 📸 Photo by Matt Gleich, Hack Clubber in NH!"
+            src="https://gtmun.gatech.edu/wp-content/uploads/2022/10/IMG_1294-1-scaled-e1668277593494.jpg"
+            alt=""
             priority
             gradient="linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.45))"
           />
@@ -206,7 +206,7 @@ function Page({
               }}
               as="h4"
             >
-              Welcome to Hack&nbsp;Club
+              Welcome to Kalinga International
             </Text>
             <Heading>
               <Text
@@ -252,22 +252,14 @@ function Page({
                     }}
                     aria-hidden="true"
                   >
-                    teen hackers
+                    teens
                   </Text>
-                  teen hackers
+                  teens
                 </Text>
                 <br sx={{ display: ['inline', 'none', 'none'] }} /> from around
-                the world who code together
+                the world
               </Text>
-              <Button
-                variant="ctaLg"
-                as="a"
-                href="/slack"
-                mt={[3, 0, 0]}
-                sx={{ transformOrigin: 'center left' }}
-              >
-                Join our community
-              </Button>
+              
             </Heading>
           </Box>
           <Box
