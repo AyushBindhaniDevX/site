@@ -268,23 +268,9 @@ function Page({
               as="h1"
               sx={{ fontSize: ['36px', '48px', '56px'] }}
             >
-              Discover the{' '}
-              <Text
-                as="span"
-                sx={{
-                  borderRadius: 'default',
-                  px: 1,
-                  mx: 0,
-                  whiteSpace: ['wrap', 'nowrap', 'nowrap'],
-                  color: 'white',
-                  background: theme => theme.util.gx('red', 'orange'),
-                  '-webkit-background-clip': 'text',
-                  '-webkit-text-fill-color': 'transparent'
-                }}
-              >
-                joy of code
-              </Text>
-              , together.
+              We are a global community of young minds from around the world, united by a shared passion for debate, critical thinking, and effective communication. At Kalinga International Debate Club (KIDC), we believe in harnessing the power of discourse and argumentation to make a positive impact on the world. Whether you're just starting your journey in debate or you're an experienced debater, KIDC is the place where you can discover the art of persuasion, learn, and grow together.
+
+
             </Text>
             <Text
               variant="subtitle"
